@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ewa Hostynska - Front End Development</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+            <li><a href="#intro" data-target="#intro" onclick="closeNav();">Home</a></li>
+            <li><a href="#about" data-target="#about" onclick="closeNav();">About</a></li>
+            <li class="desktop"><a href="#choice" data-target="#choice" onclick="closeNav();">Work&Edu</a></li>
+            <li class="mobile"><a href="#choice" data-target="#choice" onclick="closeNav();">Work Experience</a></li>
+            <li class="mobile"><a href="#education" data-target="#education" onclick="closeNav();">Education</a></li>
+            <li><a href="#contact" data-target="#contact" onclick="closeNav();">Contact</a></li>
+        </ul>
+        <button class="icon" id="toggle">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+        </button>
+    </nav>
+    <div class="sections__wrapper">
+
+
+    <!-- intro section -->
+
+    <section id="intro">
+        <div class="intro_information">
+            <h1><span>EWA</span>HOSTYNSKA</h1>
+            <h6>Front-End Web Developer</h6>
+        </div>
+        <div class="intro_social">
+            <div class="intro_social-item">
+                <a href="https://github.com/19101990"><i class="fab fa-github-square"></i></a>
+            </div>
+            <div class="intro_social-item">
+                <a href="https://www.linkedin.com/in/19101990/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="intro_social-item">
+                <a href="https://www.xing.com/profile/Ewa_Hostynska/cv"><i class="fab fa-xing-square"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about section -->
+
+    <section id="about">
+
+            <div class="about__all">
+                <div class="about__wrapper">
+                    <div class="about__text">
+                        <h1 class="headline">I am...</h1>
+                        <p>Junior Front-End developer with <b>1+ years of experience</b> working on commercial projects for a leading e-commerce company in Poland. Strong interest in JavaScript and solid knowledge of classic HTML and CSS. Good eye for design, attention to details and<em><b> let's do it </b></em>attitude towards challenges at work.</p>
+                    </div>
+                </div>
+                <div class="languages">
+                    <h2 class="headline_sm">I speak...</h2>
+                    <div><img class="flag" src="assets/img/en.svg" alt="en"><span>English: </span><b>fluent</b></div>
+                    <div><img class="flag" src="assets/img/pl.svg" alt="pl"><span>Polish: </span><b>native</b></div>
+                    <div><img class="flag" src="assets/img/de.svg" alt="de"><span>German: </span> <b>A2 (Goethe Zertifikat)</b></div>
+                    <div><img class="flag" src="assets/img/lt.svg" alt="lt"><span>Lithuanian: </span><b>B1</b></div>
+                </div>
+                <div class="skills_wrapper">
+                    <h2 class="headline_sm">I work with...</h2>
+                    <div class="skills_wrapper__animation">
+                        <div id="techstack" class="techstack">
+                            <div id="e_html" data-name="HTML" data-time="6+"><i class="fa-brands fa-html5 fa-2xl"></i></div>
+                            <div id="e_css" data-name="CSS" data-time="6+"><i class="fa-brands fa-css3-alt fa-2xl"></i></div>
+                            <div id="e_js" data-name="Java Script" data-time="2+"><i class="fa-brands fa-js fa-2xl"></i></div>
+                            <div id="e_jquery" data-name="jQuery" data-time="1.5+">jQuery</div>
+                            <div id="e_less" data-name="{less}" data-time="1.5+"><i class="fa-brands fa-less fa-2xl"></i></div>
+                            <div id="e_xml" data-name="XML" data-time="1+">XML</div>
+                            <div id="e_xslt" data-name="XSLT" data-time="1+">XSLT</div>
+                            <div id="e_wp" data-name="Wordpress" data-time="2+"><i class="fa-brands fa-wordpress-simple fa-2xl"></i></div>
+                            <div id="e_xd" data-name="AdobeXD" data-time="1.5+">AdobeXD</div>
+                            <div id="e_corel" data-name="CorelDRAW" data-time="4+">CorelDRAW</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="techexp">
+                    <div class="techexp_wrapper">
+                        <div id="exp_years">1.5+</div>
+                        <div class="techexp_text">
+                            <span>years of experience</span>
+                            <span>working with</span>
+                        </div>
+                        <div id="techexp_name">{less}</div>
+                    </div>
+                    
+                </div>
+        </div>
+        
+    </section>
+
+    <!-- education and experience section -->
+
+    <section id="choice" class="choice hover-left">
+        <div class="split left">
+          <div class="headline__wrapper"><h1><span class="highlighted">Work</span> <span>Experience</span></h1></div>
+          <div class="headline__wrapper_side"><h1>Work Experience</h1></div>
+          <div class="work_exp choice__item d-none">
+            <div class="card">
+                <a href="https://idosell.com/" class="companyname">IdoSell</a>
+                <div class="jobdetails">
+                    <h2>Junior Web Developer</h2>
+                    <div class="timespan">2021/03 - currently</div>
+                    <div class="jobdescription"><strong>Responsibilities:</strong>
+                    <ul>
+                        <li>creating custom templates for online stores based on IdoSell platform</li>
+                        <li>creating dedicated features and solutions for clients</li>
+                        <li>working with HTML, CSS/{less}, JavaScript, jQuery and XML/XSLT on the daily basis</li>
+                    </ul>
+                    </div>
+                    <div class="techstack"><strong>Technologies and software:</strong> HTML, CSS/{less}, JavaScript/jQuery, AJAX, XML/XSLT, Gulp, AdobeXD</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <a href="http://netserwis.redlo.eu/" class="companyname">NETSERWIS</a>
+                <div class="jobdetails">
+                    <h2>IT-Support</h2>
+                    <div class="timespan">2016/02 – 2020/12</div>
+                    <div class="jobdescription"><strong>Responsibilities:</strong> 
+                        <ul>
+                            <li>designing marketing materials (brouchures, banners, logotypes, business cards)</li>
+                            <li>developing and managing websites for clients (Wordpress and static websites)</li>
+                            <li>providing continuous IT support for clients (software, hardware, networks)</li>
+                        </ul>
+                    </div>
+                    <div class="techstack"><strong>Technologies and software:</strong> HTML, CSS, Wordpress, CorelDRAW</div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="split right">
+          <div class="headline__wrapper"><h1><span>Relevant</span><span class="highlighted">Education</span></h1></div>
+          <div class="headline__wrapper_side"><h1>Relevant Education</h1></div>
+          <div class="education choice__item d-none">
+            <div class="card">
+                <div class="companyname">Udacity</div>
+                <div class="jobdetails">
+                    <h2>Front End Web Developer Nanodegree program</h2>
+                    <div class="timespan">2020/03 – 2020/08</div>
+                    <div class="description"><strong>Topics covered:</strong> HTML5, CSS3, CSS Grid, CSS Flexbox, JavaScript and the DOM, Web APIs and Asynchronous Applications, Webpack</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="companyname">West Pomerian University of Technology</div>
+                <div class="jobdetails">
+                    <h2>Computer Programming (postgraduate studies)</h2>
+                    <div class="timespan">2017 – 2018</div>
+                    <div class="description"><strong>Topics covered:</strong>  Introduction to Algorithmics, Programming Foundations, Object-Oriented Programming, Visual Programming, Web Development</div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+
+    <section id="contact">
+        <div class="contact_wrapper">
+            <h1 class="headline">Get in touch</h1>
+            <div class="contact_options">
+                <div class="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="mail-hover">
+                        <div id="copy-mail">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <a href="mailto:e19101990@gmail.com" id="goto-mail">
+                            <i class="fa-regular fa-paper-plane"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact_social-item">
+                    <a href="https://github.com/19101990"><i class="fab fa-github-square"></i></a>
+                </div>
+                <div class="contact_social-item">
+                    <a href="https://www.linkedin.com/in/19101990/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="contact_social-item">
+                    <a href="https://www.xing.com/profile/Ewa_Hostynska/cv"><i class="fab fa-xing-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="resume">
+            <a href="assets/img/CV_eh_dark.pdf" class="resume_item" target="_blank">Resume <i class="fa-solid fa-moon"></i></a>
+            <a href="assets/img/CV_eh_light.pdf" class="resume_item" target="_blank">Resume <i class="fa-solid fa-sun"></i></a>
+        </div>
+    </section>
+
+    <script src="index.js"></script>	
+</body>
+</html>
