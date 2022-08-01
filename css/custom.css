@@ -264,7 +264,9 @@ body:not(.contact-section):not(.about-section):not(.intro-section) .icon .line {
     transform: translateX(-100vw);
     transition: all 0.3s ease-in;
   }
-  body:not(.contact-section):not(.about-section):not(.intro-section) .icon .line {
+  body:not(.contact-section):not(.about-section):not(.intro-section)
+    .icon
+    .line {
     display: block;
   }
 }
@@ -354,6 +356,9 @@ body:not(.contact-section):not(.about-section):not(.intro-section) .icon .line {
 @media (max-width: 979px) {
   .intro_information h1 {
     font-size: 33px;
+  }
+  .intro_social {
+    bottom: 65px;
   }
 }
 #about {
@@ -975,9 +980,11 @@ body:not(.contact-section):not(.about-section):not(.intro-section) .icon .line {
   }
 }
 @media (max-width: 756px) {
-  #choice,
-  #education {
+  #choice {
     padding: 2rem 0;
+  }
+  #education {
+    padding: 4rem 0 0 0;
   }
   #choice .split .choice__item .card,
   #education .split .choice__item .card {
@@ -1107,6 +1114,17 @@ body:not(.contact-section):not(.about-section):not(.intro-section) .icon .line {
 @media (min-width: 979px) {
   #contact .resume {
     right: 20px;
+  }
+}
+@media (max-width: 978px) {
+  #contact .resume {
+    bottom: 65px;
+  }
+  #contact .contact_options {
+    justify-content: space-evenly;
+  }
+  #contact .contact_wrapper {
+    padding-bottom: 2rem;
   }
 }
 #contact .resume .resume_item:first-of-type {
